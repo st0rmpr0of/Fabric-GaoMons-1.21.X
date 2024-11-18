@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "gaomons",
+	"version": "${version}",
+	"name": "GaoMons",
+	"description": "This mod adds in the Power Animals and their combinations from GaoRanger as Cobblemon.",
+	"authors": [
+		"st0rmpr0of"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/gaomons/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.st0rmpr0of.gaomons.GaoMons"
+		],
+		"fabric-datagen": [
+			"net.st0rmpr0of.gaomons.GaoMonsDataGenerator"
+		],
+		"client": [
+			"net.st0rmpr0of.gaomons.GaoMonsClient"
+		]
+	},
+	"mixins": [
+		"gaomons.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
