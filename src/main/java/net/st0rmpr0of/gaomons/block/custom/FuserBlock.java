@@ -20,7 +20,11 @@ public class FuserBlock extends Block implements BlockEntityProvider {
 
     @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
-
+        if(!world.isClient) {
+            if(world.getBlockEntity(pos) instanceof FuserBlockEntity fuserBlockEntity) {
+                player.openHandledScreen(fuserBlockEntity);
+            }
+        }
         return ActionResult.SUCCESS;
     }
 
