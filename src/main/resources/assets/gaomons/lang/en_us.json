@@ -1,5 +1,7 @@
 {
   "item.gaomons.growl_phone": "Growl Phone",
 
-  "itemgroup.gaomons.gaomons_items": "GaoMons Items"
+  "itemgroup.gaomons.gaomons_items": "GaoMons Items",
+
+  "block.gaomons.fuser_block": "Fuser"
 }

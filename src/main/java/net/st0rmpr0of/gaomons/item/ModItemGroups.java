@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.st0rmpr0of.gaomons.GaoMons;
+import net.st0rmpr0of.gaomons.block.ModBlocks;
 
 public class ModItemGroups {
     public static final ItemGroup GAOMONS_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -16,6 +17,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.gaomons.gaomons_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.GROWL_PHONE);
+                        entries.add(ModBlocks.FUSER_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {

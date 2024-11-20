@@ -2,6 +2,8 @@ package net.st0rmpr0of.gaomons;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.st0rmpr0of.gaomons.block.ModBlockEntityTypes;
+import net.st0rmpr0of.gaomons.block.ModBlocks;
 import net.st0rmpr0of.gaomons.item.ModItemGroups;
 import net.st0rmpr0of.gaomons.item.ModItems;
 import org.slf4j.Logger;
@@ -15,5 +17,7 @@ public class GaoMons implements ModInitializer {
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModBlockEntityTypes.registerModBlockEntityTypes();
 	}
 }

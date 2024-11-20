@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "gaomons:block/gaomons_fuser_block"
+  }
+}

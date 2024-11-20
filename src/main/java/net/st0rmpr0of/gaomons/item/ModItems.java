@@ -18,9 +18,5 @@ public class ModItems {
 
     public static void registerModItems() {
         GaoMons.LOGGER.info("Registering Mod Items for" + GaoMons.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
-            entries.add(GROWL_PHONE);
-        });
     }
 }

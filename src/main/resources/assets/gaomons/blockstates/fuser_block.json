@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "gaomons:block/gaomons_fuser_block"
+    }
+  }
+}
